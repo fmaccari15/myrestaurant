@@ -1,14 +1,37 @@
+body {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
-
-#main {
-    border-style: solid;
-    border-color:palevioletred;
-    width: 70%;
+h1 {text-align: center;
+    color: black;
 
 }
 
-.pink {
-    color: pink;
+#main {
+    border-style: solid;
+    border-color:blue;
+    border-radius: 20px;
+    background-color: lightyellow;
+    width: 70%;
+    margin: 5px;
+}
+
+#sidebar {
+    border-style: solid;
+    border-color:blue;
+    border-radius: 20px;
+    background-color: lightyellow;
+    margin: 5px;
+}
+
+.green {
+    color: forestgreen;
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
 }
 
 @media (min-width:600px) {
@@ -25,4 +48,26 @@
         width: 70%;
     }
 
+    #sidebar2{
+        width: 50%;
+    }
+
+    #main2{
+        width: 50%;
+    }
+
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
 }
